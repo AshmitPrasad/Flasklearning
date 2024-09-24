@@ -1,0 +1,12 @@
+{% extends "layout.html"  %}
+
+{% block content%}
+<h1> the Given number is {{number}}</h1>
+{%if number==0 %}
+    <p> Diya Gaya Number naahi even na odd hai</p>
+{%elif number%2==0%}
+    <p> Diya Gaya Number  even </p>
+{%else%}
+    <p> Diya Gaya Number  odd hai</p>
+{% endif %}
+{% endblock content%}

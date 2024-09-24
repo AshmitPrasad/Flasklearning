@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% block content %}
+<h2>List:</h2>
+
+<ul> 
+    <li>Home page</li>
+    <li> <a href="{{url_for('About')}} " target= "_blank">About page</a></li>
+    <li>Career page</li>
+    <li>Products page</li>
+    <li><a href="{{url_for('Emp')}} " target= "_blank">Employees</a></li>
+    <ul>
+        <li><a href="{{url_for('manager')}} " target= "_blank">Managers</a></li>
+    </ul>
+    <li>Contact Us</li>
+    
+
+</ul>
+
+ {% endblock content%} 
